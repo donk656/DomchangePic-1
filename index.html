@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修改属性-yesihao</title>
+    <script>
+        let flag = true
+        function changePic(){
+            let myImg = document.getElementsByTagName('img')[0]
+            if (flag) {
+                myImg.setAttribute('src','2.webp')
+                flag = false
+            }
+           else{
+                myImg.setAttribute('src','1.webp')
+                flag = true
+           }
+        }
+    </script>
+</head>
+<body>
+    <img src="1.webp" alt="" title="" onclick="changePic()">
+</body>
+</html>
